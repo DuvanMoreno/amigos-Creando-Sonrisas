@@ -1,0 +1,316 @@
+/* 
+Colors
+#0073ac : Principal Blue 
+#ffffff : White Secundary
+#ea1f28 : red point
+#fff200 : Yellow point 
+#e50390 : Pink Point 
+#32583f : Green Point
+#f38222 : Orange Point
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Baumans', cursive;
+}
+body {
+    padding-bottom: 0px;
+}
+
+.img-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../img/img-fixed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -3;
+    
+
+}
+header {
+    background-color: transparent ;
+}
+
+
+
+.header-img {
+    background-image: url(../img/bg-fixed.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 20;
+    box-shadow: 0px 10px 30px;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 10px 20px;
+}
+
+#navbar img {
+    position: relative;
+    width: 35%;
+    height: 30%;
+}
+
+ul li {
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-items {
+    background-color: rgba( 0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    display: none;
+    position: fixed;
+    left: 0px;
+    width: 100vw;
+    border-top: 2px solid white;
+}
+
+.fa-bars, .fa-times {
+    position: relative;    
+    background-color: #0073ac;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+
+#close-menu {
+    display: none;
+}
+
+.icons {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5px 10px;
+}
+
+
+header .container-fluid .row {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row img {
+    position: absolute;
+    left: 1rem;
+    height: 60%;
+    width: 60%;
+}
+
+#phrase {
+    top:10%;
+
+}
+
+#donate {
+    position: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 40vh;
+    right: 0px;
+    background-image: url(../img/Donate.png);
+    height: 25vh;
+    width: 25vw;
+    z-index: 111111;
+    transition-duration: 0.3s;
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    border: 2px dashed #0073ac;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#what-we-do {
+    background-color: transparent ;
+}
+
+p { 
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+footer i {
+    font-size: 2rem;
+}
+
+.fa-facebook-f {
+    color: #3B5998;
+}
+.fa-instagram {
+    color: #DD2A7B;
+}
+
+.fa-phone {
+    color: gray;
+}
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-phone:hover {
+    font-size: 3rem;
+}
+
+
+/* 
+BlueFacebook = #3B5998
+PinkInstagram = #DD2A7B
+
+*/
+/********** HELPERS **********/
+
+div [class*="col-"], .row {
+    padding: 10px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0073ac;
+    padding-bottom: 1rem;
+}
+.white-opacity {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.bg-white {
+    background-color: #fff;
+}
+.reset {
+    padding: 0px;
+    margin: 0px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* ===========================extra small devices => 576px=============================== */
+
+@media (min-width: 576px) {
+   
+    .row img {
+        width: 50%;
+        height: 75%;
+    }
+
+    #navbar img {
+        width: 25%;
+        height: 150%;
+    }    
+
+}
+
+
+/* ======================medium devices => 768px =================================== */
+
+@media (min-width: 768px) {
+    .text-align-justify {
+        text-align: justify;
+    }
+
+    .spc-btw {
+        justify-content: space-between;
+    }
+
+
+}
+
+/* ==========================large devices => 992px=============================== */
+
+@media (min-width: 992px) {
+        
+    #navbar img {
+        width: 15%;
+        height: 8%;
+    }
+    
+    #bars-menu, #close-menu {
+        display: none !important;
+    }
+
+
+    nav ul li {
+        display: inline;
+        margin-left: auto;
+        padding: 5px ;
+        
+    }
+
+    nav ul li:hover {
+        border-left: 4px solid white;
+
+    }
+    #menu-items {
+        border-top: none;
+        display: flex !important;
+        background-color: transparent;
+        position: relative;
+        top: 0% !important;        
+    }
+    nav ul li a {
+        color: white;
+    }
+
+    .row img {
+        width: 50%;
+        height: 75%;
+    }
+
+    #donate {
+        width: 20vh;
+        height: 20vh;
+    } 
+    
+    .border-right-blue {
+        border-right: 4px solid #0073ac ;
+    }
+    
+    .border-left-blue {
+        border-left: 4px solid #0073ac ;
+
+    }
+}
